@@ -47,7 +47,7 @@ export async function getStaticProps(context) {
   const meetupsCollection = db.collection("meetups")
   const result =  await meetupsCollection.findOne({_id:ObjectId(meetupId) })
   client.close()
-  console.log("result",result);
+  
     if (meetupId) {
         return{
             props:{
