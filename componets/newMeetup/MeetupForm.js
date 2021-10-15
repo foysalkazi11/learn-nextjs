@@ -1,4 +1,5 @@
-import React,{useState} from 'react'
+import React,{useState} from 'react';
+import classes from './MeetupForm.module.css';
 
 const MeetupForm = (props) => {
     const [data,setData] =useState ({
@@ -17,13 +18,13 @@ const MeetupForm = (props) => {
         props.submitData(data)
     }
     return (
-        <div style={{display:"flex",flexDirection:"column",width:"100%",maxWidth:"500px",margin:"20px auto"}}>
+        <div className={classes.container}>
             <form onSubmit={handleSubmit} style={{display:"flex",flexDirection:"column"}}>
             {/* <input name="id" placeholder="ID" type="number" value={data?.id} onChange={handleInput} /> */}
-            <input name="title" placeholder="Title" type="text" value={data?.title} onChange={handleInput} />
-            <input name="summery" placeholder="Summery" type="text" value={data?.summery} onChange={handleInput} />
-            <input name="image" placeholder="ImageUrl" type="text" value={data?.image} onChange={handleInput} />
-            <button type="submit">Submit</button>
+            <input className={classes.input} name="title" placeholder="Title" type="text" value={data?.title} onChange={handleInput} />
+            <input className={classes.input} name="summery" placeholder="Summery" type="text" value={data?.summery} onChange={handleInput} />
+            <input className={classes.input} name="image" placeholder="ImageUrl" type="text" value={data?.image} onChange={handleInput} />
+            <button className={classes.input} type="submit">Submit</button>
             </form>
         </div>
     )

@@ -1,0 +1,16 @@
+.container{
+    display:flex;
+    width:100%;
+    max-width:500px;
+    margin:10px auto;
+    padding:10px
+}
+.container ul{
+    display:flex;
+    align-items: center;
+}
+.container ul li{
+    list-style: none;
+    text-decoration: underline;
+    font-weight: 500;
+}

@@ -1,17 +1,20 @@
 import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
+import classes from './MeetupList.module.css'
 
 const MeetupList = ({meetupList}) => {
     return (
-        <div style={{display:"flex",flexDirection:"column",width:"100%",maxWidth:"500px",margin:"20px auto"}}>
+        <div className={classes.container}>
             {meetupList?.map((item,index)=>{
                 return(
-                    <div style={{display:"flex",flexDirection:"column"}} key={index}>
+                    <div className={classes.singleMeetup} key={index}>
                         <h3>{item?.title}</h3>
                         <img src={item?.image} alt="imgs" style={{width:"100%",height:300}} />
+                        <button className={classes.button}>
                         <Link href={`/${item?.id}`}>
                             Show More
                         </Link>
+                        </button>
                     </div>
                 )
             })}

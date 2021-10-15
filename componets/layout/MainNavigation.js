@@ -1,9 +1,10 @@
 import React from 'react'
-import Link from 'next/link'
+import Link from 'next/link';
+import classes from './MainNavigation.module.css'
 
  const MainNavigation = () => {
     return (
-        <div style={{width:"100%",maxWidth:"500px",margin:"20px auto",padding:"10px"}}>
+        <div className={classes.container}>
             <ul style={{display:"flex",alignItems:"center"}}>
                 <li style={{paddingRight:20}}>
                     <Link href="/">Home</Link>
