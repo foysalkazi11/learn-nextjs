@@ -35,7 +35,7 @@ export async function getStaticPaths(){
 
     
     return{
-        fallback:false, // if you want to create diynamic id automatically then use fallback : true, otherwise you have to mention which id should use. If you use fallback: true and mention some id then it will create those page Static Site Generation.
+        fallback:"blocking", // if you want to create diynamic id automatically then use fallback : true, otherwise you have to mention which id should use. If you use fallback: true and mention some id then it will create those page Static Site Generation.
         paths:key
     }
 }
