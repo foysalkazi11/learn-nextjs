@@ -9,9 +9,10 @@ import classes from './MainNavigation.module.css'
                 <li style={{paddingRight:20}}>
                     <Link href="/">Home</Link>
                 </li>
-                <li>
+                <li style={{paddingRight:20}}>
                     <Link href="/newMeetup">New Meetup</Link>
                 </li>
+                
             </ul>
         </div>
     )
