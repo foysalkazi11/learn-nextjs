@@ -12,7 +12,9 @@ import classes from './MainNavigation.module.css'
                 <li style={{paddingRight:20}}>
                     <Link href="/newMeetup">New Meetup</Link>
                 </li>
-                
+                <li>
+                    <Link href="/comments">Comments</Link>
+                </li>
             </ul>
         </div>
     )
